@@ -1,0 +1,55 @@
+.page5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page5_ment1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.page5_ment11 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+.page5_ment2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 35px;
+}
+
+.page5_box2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page5_box1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page5_boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}

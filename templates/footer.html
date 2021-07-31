@@ -1,1 +1,54 @@
-<h2>footer</h2>
+
+<div class="footer">
+    <div class="logo">
+        <a href="#target1" class="scroll">
+            <img src="https://firebasestorage.googleapis.com/v0/b/picture-storage-a8f07.appspot.com/o/flask_introduce_project%2Ffooterlogo.jpeg?alt=media&token=a23e1471-f603-4639-8795-813ad03d4700" />
+        </a>
+        <p>㈜ 0000 COMPANY</p>
+        <a href="https://github.com/lllillly"><span>Created by lllillly</span></a>
+    </div>
+
+    <div class="footer_ment">
+        <div class="f_ment_1">
+            <p>CONTACT US</p>
+            <span>nijoyh0503@gmail.com</span>
+            <div class="f_ment_1_1">
+                <a href="mailto: nijoyh0503@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/lllillly"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/lllillly_03/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=ko"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="f_ment_2">
+            <p>SUPPORT</p>
+            <a href="mailto: nijoyh0503@gmail.com"><span>Contact Us</span></a>
+            <a href="mailto: nijoyh0503@gmail.com"><span>FAQ</span></a>
+            <a href="https://www.apple.com/kr/shop/buy-iphone/iphone-12-pro"><span>Product Sell</span></a>
+            <a href="https://www.apple.com/kr/"><span>About Apple</span></a>
+        </div>
+        <div class="f_ment_3">
+            <p>Subscribe to our News</p>
+            <input placeholder="Enter Your Name" />
+            <input placeholder="Enter Your Email Address" />
+            <button onclick="button_click();">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    function button_click() {
+        emailjs.init("user_7128jxbcwDMVelrfxYV9k");
+            var templateParams = {
+                name: $('input[name=name]').val(),
+                email : $('input[name=email]').val(),
+            };
+                            
+        emailjs.send('gmail', 'template_GH8tn3us', templateParams)
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+            console.log('FAILED...', error);
+            });
+    }
+</script>

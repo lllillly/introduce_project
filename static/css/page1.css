@@ -1,0 +1,44 @@
+.summary {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.summary_ment1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.summary_ment2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 35px;
+}
+
+.summary_box1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.summary_box2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
